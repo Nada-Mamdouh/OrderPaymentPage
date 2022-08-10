@@ -1,0 +1,19 @@
+<div class="wallet-container row g-0 d-flex justify-content-around">
+    <div class="box col-4 p-3"> <i class="bi bi-bag-check-fill"></i><span class="title-span">Total Orders:</span> <span class="num-span">{{this.totalOrders}}</span></div>
+    <div class="box col-4 p-3"> <i class="bi bi-credit-card-2-back-fill"></i><span class="title-span">Total Payments:</span> <span class="num-span">{{this.totalPayments}}</span></div>
+    <div class="box col-4 p-3"> <i class="bi bi-coin"></i>
+      <span>Pay: </span><input class="form-control  amount-box" #amountToBeDeducted>
+      <button (click)="onDeduct(amountToBeDeducted.value)"
+      class="btn btn-dark" style="height:37px;display:inline-block;border-radius:5px;position:relative;top:-2.5px;">
+      <i class="bi bi-upload" style="color:white;background-color:transparent;padding:0px;"></i>
+  </button></div>
+
+    <div class="box col-4 p-3"> <i class="bi bi-bank"></i><span class="title-span">Money I owe:</span> <span class="num-span">{{this.moneyIOwe}}</span> </div>
+    <div class="box col-4 p-3"> <i class="bi bi-cash-coin"></i> <span class="title-span">Money I own:</span> <span class="num-span">{{this.moneyIOwn}}</span> </div>
+    <div *ngIf="displayWalletBalance" class="box col-4 p-3"> <i class="bi bi-piggy-bank-fill"></i> <span class="title-span">Wallet Ballance:</span> <span class="num-span">{{this.walletBalance}}</span> </div>
+</div>
+
+
+
+
+

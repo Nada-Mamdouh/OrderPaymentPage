@@ -1,0 +1,18 @@
+.bi{
+  padding: 10px;
+  margin: 5px;
+  border-radius: 30%;
+  font-size: 20px;
+  background-color: #bfccc0;
+}
+.amount-box{
+  display: inline;
+  width: 50%;
+}
+.num-span{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500px;
+}
+.title-span{
+  font-size: 13px;
+}

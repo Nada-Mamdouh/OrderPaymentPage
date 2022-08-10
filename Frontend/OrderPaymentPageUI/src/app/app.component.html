@@ -1,0 +1,19 @@
+
+<div class="container">
+  <div class="row g-0">
+    <app-display-client></app-display-client>
+    <app-display-wallet></app-display-wallet>
+  </div>
+  <div class="row g-0 d-flex justify-content-around mt-5">
+    <div class="orders-container col-6">
+      <app-list-orders></app-list-orders>
+      <app-add-order></app-add-order>
+      <router-outlet></router-outlet>
+    </div>
+    <div class="payments-container col-4">
+      <app-list-payments></app-list-payments>
+      <app-add-payment></app-add-payment>
+    </div>
+  </div>
+</div>
+

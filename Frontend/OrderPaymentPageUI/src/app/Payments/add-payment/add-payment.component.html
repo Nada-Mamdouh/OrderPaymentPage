@@ -1,0 +1,10 @@
+
+<button  class="btn btn-light" style="background-color:#c3b3f1" (click)="toggleDisplay()">Add new Payment</button>
+
+<form *ngIf = "displayFlag" #addPayment="ngForm" (ngSubmit)="onAdd(addPayment.value)">
+  <div class="form-group">
+    <label for="Amount">PaymentAmount</label>
+    <input type="number" class="form-control" id="exampleInputAmount" name = "amount" ngModel>
+  </div>
+  <button type="submit" class="btn btn-dark">Add</button>
+</form>
