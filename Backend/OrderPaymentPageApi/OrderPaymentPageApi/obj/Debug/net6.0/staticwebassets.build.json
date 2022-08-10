@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "9LirKMeWU8LTExZJMBd35BbL6hHrYHcDV3icXnlnIOg=",
+  "Source": "OrderPaymentPageApi",
+  "BasePath": "_content/OrderPaymentPageApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
