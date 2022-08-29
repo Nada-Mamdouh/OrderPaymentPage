@@ -36,6 +36,7 @@ namespace OrderPaymentPageApi.Repositories
             return orders.OrderBy(order => order.DateOrdered).ToList();
         }
 
+
         public void deduct(double amount, List<Order> orderedOrdersByDate)
         {
             double declinedAmount = amount;
