@@ -7,21 +7,15 @@ namespace OrderPaymentPageApi.Repositories
     public class WalletRepository 
     {
         OrderPaymentDbContext dbcontext;
-        //IUpdateRepository<Order> orderRepository;
-        //IUpdateRepository<Payment> paymentRepository;
         IRepository<Client> clientRepo;
         IRepository<Order> orderRepo;
         IRepository<Payment> paymentRepo;
         public WalletRepository(OrderPaymentDbContext dbcontext,
-                                //IUpdateRepository<Order> orderRepository, 
-                                //IUpdateRepository<Payment> paymentRepository,
                                 IRepository<Client> clientRepo, 
                                 IRepository<Order> orderRepo, 
                                 IRepository<Payment> paymentRepo)
         {
             this.dbcontext = dbcontext;
-            //this.orderRepository = orderRepository; 
-            //this.paymentRepository = paymentRepository;
             this.clientRepo = clientRepo;
             this.orderRepo = orderRepo;
             this.paymentRepo = paymentRepo;
