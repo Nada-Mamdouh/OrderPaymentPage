@@ -43,7 +43,7 @@ namespace OrderPaymentPageApi.Repositories
             if (amount <= 0) return;
             else
             {
-                List<Order> unpaidAndPartiallyPaidOrders = ordersOrderedByDate.Where(or => or.Total != or.PaidAmount).ToList();
+                List<Order> unpaidAndPartiallyPaidOrders = orderedOrdersByDate.Where(or => or.Total != or.PaidAmount).ToList();
                 foreach (var order in unpaidAndPartiallyPaidOrders)
                 {
                     double orderPaidAmount = 0.0;
